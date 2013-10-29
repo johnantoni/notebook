@@ -1,0 +1,17 @@
+# index.php/post to /post
+
+## .htaccess
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+RewriteRule ^blog/(.+)$ http://www.manawa.net/index.php/$1 [R=301,L]
+</IfModule>
+
+Then go into Settings->Permalinks and change the “Common Settings” to “Custom Structure” and enter:
+
+http://mysite.com/%postname%/
