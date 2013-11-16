@@ -13,9 +13,9 @@
 
 ### Install Ruby with OPENSSL (OSX BREW)
 
-    CONFIGURE_OPTS=--with-openssl-dir=/usr/bin rbenv install 2.0.0-p0
+    CONFIGURE_OPTS=--with-openssl-dir=/usr/bin rbenv install 2.0.0-p247
 
-    rbenv global 2.0.0-p0
+    rbenv global 2.0.0-p247
 
 ### Install Ruby with OPENSSL, READLINE and INSTALL (OSX MACPORTS)
 
